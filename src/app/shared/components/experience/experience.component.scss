@@ -1,0 +1,36 @@
+section {
+  display: flex;
+  justify-content: space-between;
+
+  >article {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 5rem;
+    width: 5rem;
+    transition: .5s;
+
+    &.hide {
+      width: 2.5%;
+      border-radius: 5px;
+      padding: 1rem 0;
+    }
+    &.selected {
+      border-radius: 5px;
+      width: 95%;
+      padding: 1rem;
+
+      >div {
+       background-size: contain;
+       background-position: center;
+       background-repeat: no-repeat;
+       border: 1px solid #000;
+       border-radius: 5px;
+       height: 3rem;
+       width: 3rem;
+      }
+    }
+  }
+}

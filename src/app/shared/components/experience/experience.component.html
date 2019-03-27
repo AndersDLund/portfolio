@@ -1,0 +1,7 @@
+<section>
+  <ng-container *ngFor="let experience of experiences">
+    <article (click)="selectExperience(experience, experiences)" [ngClass]="{'selected': experience.selected, 'hide': experience.hide}" [ngStyle]="!experience.selected && {'background-image': 'url(' + experience.img + ')'}">
+      <div *ngIf="experience.selected" [ngStyle]="{'background-image': 'url(' + experience.img + ')'}"></div>
+    </article>
+  </ng-container>
+</section>
