@@ -1,0 +1,81 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "../../../../scss/variables";
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  background-color: $gunmetal;
+  position: relative;
+  overflow: hidden;
+
+  >header {
+    p {
+      font-family: $font-family-fjalla;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 2rem 0 1rem 0;
+      color: $mint;
+      text-align: center;
+    }
+
+    hr {
+      width: 30%;
+      border-color: $mint;
+    }
+  }
+
+  >.contact {
+    align-items: center;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      color: $mint;
+      font-family: $font-family-sans;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    >.social {
+      display: flex;
+      justify-content: space-around;
+      // transform: skewY(6deg);
+      margin-top: 1rem;
+      width: 90%;
+
+      >figure {
+        margin: 0;
+
+        >img {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+
+  >div:last-of-type {
+    position: relative;
+    height: 3rem;
+    overflow: hidden;
+
+    &.trap-footer {
+      position: absolute;
+      // top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100vw;
+      height: 10vh;
+      background: linear-gradient($maize, $red);
+      transform: skewY(6deg);
+      transform-origin: top left;
+    }
+  }
+}

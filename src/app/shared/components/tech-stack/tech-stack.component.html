@@ -1,0 +1,16 @@
+<section >
+
+  <header>
+    <p> Here's what I use the Most </p>
+    <hr />
+  </header>
+
+  <ul>
+    <li *ngFor="let tech of tech" [ngStyle]="{'background-image': 'url(' + tech.img + ')'}">
+      <div>
+         <p>{{tech.name}}</p>
+      </div>
+    </li>
+  </ul>
+
+</section>

@@ -4,3 +4,9 @@
 @import '~bootstrap/scss/mixins';
 
 @import "variables";
+ $fa-font-path: "~font-awesome/fonts";
+ @import '~font-awesome/scss/font-awesome';
+
+body {
+  margin: 0;
+}

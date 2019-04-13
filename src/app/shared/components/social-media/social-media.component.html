@@ -1,0 +1,22 @@
+<section>
+
+  <header>
+    <p> Here's How to Contact me </p>
+    <hr />
+  </header>
+
+  <div class="contact">
+    <p>AndersDouglasLund@gmail.com</p>
+    <p>(707) 318-7934</p>
+    <div class="social">
+      <ng-container *ngFor="let socialMedia of socialMedias">
+        <figure (click)="goToSocial(socialMedia)">
+          <img src="{{socialMedia.img}}" alt="">
+        </figure>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="trap-footer"></div>
+
+</section>

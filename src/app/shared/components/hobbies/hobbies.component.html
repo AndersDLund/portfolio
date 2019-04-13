@@ -1,0 +1,17 @@
+<section>
+
+  <header>
+    <p> Here's what I Love </p>
+    <hr />
+  </header>
+
+  <article>
+    <ng-container *ngFor="let hobby of hobbies">
+      <span>
+        <img src="{{hobby.img}}" alt="">
+        <p> {{hobby.description}}</p>
+      </span>
+    </ng-container>
+  </article>
+
+</section>

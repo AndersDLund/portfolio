@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans');
+
 // container overrides
 $container-max-widths-custom: (xs: 576px, sm: 540px, md: 720px, lg: 960px, xl: 1216px);
-
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+
+// colors
+$gunmetal: #292f36;
+$turquoise: #4ecdc4;
+$mint: #f7fff7;
+$red: #ff6b6b;
+$maize: #ffe66d;
+
+// fonts
+$font-family-fjalla: 'Fjalla One', sans-serif;
+$font-family-sans: 'Open Sans', sans-serif;

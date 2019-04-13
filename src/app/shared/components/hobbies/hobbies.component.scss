@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "../../../../scss/variables";
+
+section {
+  background-color: $maize;
+  padding-bottom: 1rem;
+
+  >header {
+    p {
+      font-family: $font-family-fjalla;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 2rem 0 1rem 0;
+      color: $gunmetal;
+      text-align: center;
+    }
+
+    hr {
+      width: 30%;
+      border-color: $gunmetal;
+    }
+  }
+
+  >article {
+    padding: 0 1rem;
+    >span {
+      align-items: center;
+      display: flex;
+      >img {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+      }
+      >p {
+        color: $gunmetal;
+        font-family: $font-family-sans;
+      }
+    }
+  }
+}

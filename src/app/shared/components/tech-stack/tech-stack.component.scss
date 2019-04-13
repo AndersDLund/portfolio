@@ -1,0 +1,93 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "../../../../scss/variables";
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: $mint;
+
+  >header {
+    p {
+      font-family: $font-family-fjalla;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 2rem 0 1rem 0;
+      color: $gunmetal;
+      text-align: center;
+    }
+
+    hr {
+      width: 30%;
+      border-color: $gunmetal;
+    }
+  }
+
+  // >article {
+  //   border: 1px solid #000;
+  //   border-radius: 5px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   width: 46%;
+  //   max-height: 3rem;
+  //   overflow: hidden;
+  //   transition: 1s;
+  //   >p {
+  //     text-align: center;
+  //   }
+  //   &.expanded {
+  //     max-height: 100rem;
+  //   }
+  // }
+  >ul {
+    // display: flex;
+    // justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    padding: 0 1rem;
+    // width: 100%;
+    // flex-wrap: wrap;
+
+    >li {
+      // display: flex;
+      margin-bottom: 2rem;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      background-size: 200%;
+      background-position: left 65% bottom 35%;
+      background-repeat: no-repeat;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      margin-left: 20%;
+
+      >div {
+         background-color: rgba(247, 255, 247, .8);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        >p {
+          color: $gunmetal;
+          font-family: $font-family-sans;
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: .5rem;
+          // margin-right: 5rem;
+        }
+      }
+    }
+  }
+}

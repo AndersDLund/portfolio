@@ -1,1 +1,17 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "../scss/variables";
 
+div {
+  // @include make-container();
+  // @include make-container-max-widths($container-max-widths-custom, $grid-breakpoints);
+  // display: flex;
+  // flex-direction: column;
+  // flex-grow: 1;
+  // width: auto;
+
+  // @include media-breakpoint-up(lg) {
+  //   height: 100vh;
+  // }
+}

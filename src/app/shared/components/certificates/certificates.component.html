@@ -1,0 +1,53 @@
+<section>
+  <header>
+    <p> Here's what I'm Proud of </p>
+    <hr />
+  </header>
+
+  <div class="certs-container">
+    <ng-container *ngFor="let certificate of certificates">
+      <article [ngStyle]="{'background-image': 'url(' + certificate.img + ')'}">
+        <div>
+          <p>
+            <Strong>
+              {{certificate.name}}
+            </Strong>
+          </p>
+          <p>
+            <strong>
+              {{certificate.date}}
+            </strong>
+          </p>
+        </div>
+      </article>
+    </ng-container>
+  </div>
+
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HtEq5L5xBDU?start=59" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="description" (click)="expandDetails()" [ngClass]="{'expanded': accidentalDescription.selected}">
+     <i *ngIf="accidentalDescription.selected" class="fa fa-times"></i>
+    <span *ngIf="!accidentalDescription.selected">
+      <p>
+        {{accidentalDescription.defaultText}}
+      </p>
+      <i class="fa fa-plus"></i>
+    </span>
+    <ng-container *ngFor="let paragraph of accidentalDescription.paragraphs; last as isLast">
+      <p *ngIf="accidentalDescription.selected">
+        {{paragraph}}
+      </p>
+      <hr *ngIf="!isLast && accidentalDescription.selected" />
+    </ng-container>
+  </div>
+
+  <!-- <div class="last">
+    <p>
+      And of course, I'm proud of this website  😉
+    </p>
+  </div> -->
+
+</section>

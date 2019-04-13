@@ -1,9 +1,50 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/dropdown';
+@import "~bootstrap/scss/bootstrap.scss";
 @import "../../scss/variables";
 
 main {
-  @include make-container();
-  @include make-container-max-widths($container-max-widths-custom, $grid-breakpoints);
+  >nav {
+    align-items: center;
+    background-color: $gunmetal;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: -100px;
+    width: 100vw;
+    transition: top 0.7s;
+    z-index: 10;
+
+    &.down {
+      top: 0;
+    }
+
+    &.up {
+      top: -100px
+    }
+
+    svg-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    >.dropdown {
+      >a {
+        font-family: $font-family-sans;
+        color: $mint;
+      }
+      >.dropdown-menu {
+        background-color: $gunmetal;
+        border: 2px solid $mint;
+        >a {
+          color: $mint;
+          font-family: $font-family-sans;
+        }
+      }
+    }
+
+  }
 }

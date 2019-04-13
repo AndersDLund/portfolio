@@ -1,36 +1,177 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "../../../../scss/variables";
+
 section {
-  display: flex;
-  justify-content: space-between;
+  background-color: $turquoise;
+  position: relative;
+  width: 100vw;
+
+  >header {
+    p {
+      font-family: $font-family-fjalla;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 2rem 0 1rem 0;
+      color: $gunmetal;
+      text-align: center;
+    }
+
+    hr {
+      width: 30%;
+      border-color: $gunmetal;
+    }
+  }
 
   >article {
-    background-size: cover;
-    background-position: center;
+    height: 40vh;
+    background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 50%;
-    border: 1px solid #000;
-    height: 5rem;
-    width: 5rem;
-    transition: .5s;
+    background-position: right -10rem center;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    position: relative;
 
-    &.hide {
-      width: 2.5%;
-      border-radius: 5px;
-      padding: 1rem 0;
+    >.overlay {
+      >span:first-of-type {
+        >p {
+          font-family: $font-family-fjalla;
+          color: $gunmetal;
+          margin: 0;
+        }
+
+        >p:first-of-type {
+          font-size: 1.2rem;
+        }
+
+        >p:last-of-type {
+          font-family: $font-family-sans;
+        }
+      }
+
+      >span:last-of-type {
+        align-items: center;
+        display: flex;
+        position: absolute;
+        bottom: 50%;
+
+        >p {
+          font-family: $font-family-sans;
+          color: $mint;
+          margin: 0;
+        }
+
+        >svg-icon {
+          height: .7rem;
+          width: .7rem;
+          transform: rotate(270deg);
+        }
+      }
     }
-    &.selected {
-      border-radius: 5px;
-      width: 95%;
-      padding: 1rem;
 
-      >div {
-       background-size: contain;
-       background-position: center;
-       background-repeat: no-repeat;
-       border: 1px solid #000;
-       border-radius: 5px;
-       height: 3rem;
-       width: 3rem;
+    >.slide-out {
+      background-color: rgba(41, 47, 54, .7);
+      padding: .5rem;
+      position: absolute;
+      display: flex;
+      height: 11rem;
+      width: 90%;
+      left: -100rem;
+      top: 5rem;
+      transition: 0.7s;
+
+      >i {
+        position: absolute;
+        right: 1rem;
+        color: $mint;
+      }
+
+      >p {
+        align-self: center;
+        font-family: $font-family-sans;
+        color: $mint;
+      }
+
+      &.expanded {
+        left: 0;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
       }
     }
   }
+
+  // display: flex;
+  // justify-content: space-between;
+
+  // >article {
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   border-radius: 50%;
+  //   border: 1px solid #000;
+  //   display: flex;
+  //   height: 5rem;
+  //   justify-content: space-between;
+  //   width: 5rem;
+  //   transition: .5s;
+
+  //   &.hide {
+  //     width: 0;
+  //     border: none;
+  //   }
+
+  //   &.selected {
+  //     border-radius: 5px;
+  //     height: 7rem;
+  //     width: 100%;
+  //     padding: 1rem;
+
+  //     &.experience-0 {
+  //       background-image: url(/assets/images/wine_bottle.png);
+  //       background-size: 50%;
+  //       background-position: right;
+  //     }
+
+  //     &.experience-1 {
+  //       background-image: url(/assets/images/audi_full.png);
+  //       background-size: 100%;
+  //       background-position: right -9rem bottom;
+  //     }
+
+  //     &.experience-2 {
+  //       background-image: url(/assets/images/software.png);
+  //       background-size: 50%;
+  //       background-position: right -2rem bottom;
+  //     }
+
+  //     >div {
+  //       &.corner-img {
+  //         background-size: contain;
+  //         background-position: center;
+  //         background-repeat: no-repeat;
+  //         border: 1px solid #000;
+  //         border-radius: 5px;
+  //         height: 3rem;
+  //         width: 3rem;
+  //       }
+
+  //       &.text-box {
+  //         background-color: rgba(255,255,255, .8);
+  //         border: 1px solid #000;
+  //         border-radius: 5px;
+  //         height: 100%;
+  //         overflow: auto;
+  //         width: 80%;
+
+  //         >p {
+  //           margin: 0;
+  //           padding: .3rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
