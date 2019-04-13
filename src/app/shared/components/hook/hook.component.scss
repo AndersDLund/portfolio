@@ -13,22 +13,22 @@ section {
   position: relative;
 
   >div {
-      position: relative;
-      height: 3rem;
-      overflow: hidden;
+    position: relative;
+    height: 3rem;
+    overflow: hidden;
 
-      &.trap-header {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100vw;
-        height: 10vh;
-        background: linear-gradient($maize, $red);
-        transform: skewY(-6deg);
-        transform-origin: top left;
-      }
+    &.trap-header {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100vw;
+      height: 10vh;
+      background: linear-gradient($maize, $red);
+      transform: skewY(-6deg);
+      transform-origin: top left;
+    }
   }
 
   >article {
@@ -44,6 +44,11 @@ section {
       >svg-icon {
         height: 5rem;
         width: 5rem;
+
+        @include media-breakpoint-up(md) {
+          height: 7rem;
+          width: 7rem;
+        }
       }
     }
 
@@ -51,6 +56,11 @@ section {
       color: $mint;
       font-family: $font-family-fjalla;
       font-size: 2rem;
+
+      @include media-breakpoint-up(md) {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+      }
     }
 
     >p {
@@ -58,6 +68,10 @@ section {
       font-family: $font-family-sans;
       font-size: 1.5rem;
       margin: 0;
+
+      @include media-breakpoint-up(md) {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -70,6 +84,11 @@ section {
     >svg-icon {
       height: 3rem;
       width: 3rem;
+
+      @include media-breakpoint-up(md) {
+        height: 4rem;
+        width: 4rem;
+      }
     }
   }
 }

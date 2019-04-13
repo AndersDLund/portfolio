@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+  @Input() isWeb: boolean;
 
   experiences = [
     {
@@ -43,33 +44,7 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
 
-  selectExperience(experience, experiences) {
-    if (experience.selected) {
-      this.resetExperiences(experiences);
-    } else {
-      this.resetExperiences(experiences);
-      this.hideExperiences(experience, experiences);
-    }
-  }
-
-  resetExperiences(experiences) {
-    for (let i = 0; i < experiences.length; i++) {
-      experiences[i].selected = false;
-      experiences[i].hide = false;
-    }
-  }
-
-  hideExperiences(experience, experiences) {
-    experience.selected = true;
-    for (let i = 0; i < experiences.length; i++) {
-      if (experiences[i].name === experience.name) {
-        continue;
-      } else {
-        experiences[i].hide = true;
-      }
-    }
   }
 
   expandDetails(experience) {

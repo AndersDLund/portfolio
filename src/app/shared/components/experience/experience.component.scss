@@ -30,13 +30,14 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right -10rem center;
-    // padding-left: 1rem;
-    // padding-right: 1rem;
     padding: 1rem 1rem 0 1rem;
     position: relative;
 
     >.overlay {
-      >span:first-of-type {
+          @include media-breakpoint-up(md) {
+            margin-left: 5rem;
+          }
+      >.exp-title {
         >p {
           font-family: $font-family-fjalla;
           color: $gunmetal;
@@ -52,7 +53,7 @@ section {
         }
       }
 
-      >span:last-of-type {
+      >.see-more{
         align-items: center;
         display: flex;
         position: absolute;
@@ -100,78 +101,21 @@ section {
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
       }
+
+      @include media-breakpoint-up(md) {
+        background-color: transparent;
+        position: initial;
+        width: 40%;
+        padding: 0;
+        margin-left: 5rem;
+
+         >p {
+          //  color: $gunmetal;
+         }
+      }
     }
+       @include media-breakpoint-up(md) {
+         background-position: right;
+       }
   }
-
-  // display: flex;
-  // justify-content: space-between;
-
-  // >article {
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   border-radius: 50%;
-  //   border: 1px solid #000;
-  //   display: flex;
-  //   height: 5rem;
-  //   justify-content: space-between;
-  //   width: 5rem;
-  //   transition: .5s;
-
-  //   &.hide {
-  //     width: 0;
-  //     border: none;
-  //   }
-
-  //   &.selected {
-  //     border-radius: 5px;
-  //     height: 7rem;
-  //     width: 100%;
-  //     padding: 1rem;
-
-  //     &.experience-0 {
-  //       background-image: url(/assets/images/wine_bottle.png);
-  //       background-size: 50%;
-  //       background-position: right;
-  //     }
-
-  //     &.experience-1 {
-  //       background-image: url(/assets/images/audi_full.png);
-  //       background-size: 100%;
-  //       background-position: right -9rem bottom;
-  //     }
-
-  //     &.experience-2 {
-  //       background-image: url(/assets/images/software.png);
-  //       background-size: 50%;
-  //       background-position: right -2rem bottom;
-  //     }
-
-  //     >div {
-  //       &.corner-img {
-  //         background-size: contain;
-  //         background-position: center;
-  //         background-repeat: no-repeat;
-  //         border: 1px solid #000;
-  //         border-radius: 5px;
-  //         height: 3rem;
-  //         width: 3rem;
-  //       }
-
-  //       &.text-box {
-  //         background-color: rgba(255,255,255, .8);
-  //         border: 1px solid #000;
-  //         border-radius: 5px;
-  //         height: 100%;
-  //         overflow: auto;
-  //         width: 80%;
-
-  //         >p {
-  //           margin: 0;
-  //           padding: .3rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }

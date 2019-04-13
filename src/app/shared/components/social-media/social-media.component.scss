@@ -49,6 +49,10 @@ section {
       margin-top: 1rem;
       width: 90%;
 
+       @include media-breakpoint-up(md) {
+         width: 15%;
+       }
+
       >figure {
         margin: 0;
 

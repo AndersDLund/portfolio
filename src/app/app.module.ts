@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -37,7 +38,8 @@ import { HobbiesComponent } from './shared/components/hobbies/hobbies.component'
     BrowserAnimationsModule,
     AngularSvgIconModule,
     HttpClientModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

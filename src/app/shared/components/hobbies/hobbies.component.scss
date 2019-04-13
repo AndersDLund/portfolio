@@ -7,7 +7,17 @@ section {
   background-color: $maize;
   padding-bottom: 1rem;
 
+  @include media-breakpoint-up(md) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   >header {
+     @include media-breakpoint-up(md) {
+       width: 100%;
+     }
     p {
       font-family: $font-family-fjalla;
       font-size: 1.5rem;
@@ -26,14 +36,26 @@ section {
 
   >article {
     padding: 0 1rem;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 80%;
+      width: 50%;
+    }
+
     >span {
       align-items: center;
       display: flex;
+
       >img {
         height: 3rem;
         width: 3rem;
         margin-right: 1rem;
       }
+
       >p {
         color: $gunmetal;
         font-family: $font-family-sans;

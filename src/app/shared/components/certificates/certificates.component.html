@@ -26,10 +26,19 @@
   <div class="video-wrapper">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/HtEq5L5xBDU?start=59" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div *ngIf="isWeb">
+      <ng-container *ngFor="let paragraph of accidentalDescription.paragraphs; last as isLast">
+        <p>
+          {{paragraph}}
+        </p>
+      </ng-container>
+    </div>
   </div>
 
-  <div class="description" (click)="expandDetails()" [ngClass]="{'expanded': accidentalDescription.selected}">
-     <i *ngIf="accidentalDescription.selected" class="fa fa-times"></i>
+  <div *ngIf="!isWeb" class="description" (click)="expandDetails()"
+    [ngClass]="{'expanded': accidentalDescription.selected}">
+    <i *ngIf="accidentalDescription.selected" class="fa fa-times"></i>
     <span *ngIf="!accidentalDescription.selected">
       <p>
         {{accidentalDescription.defaultText}}
@@ -43,11 +52,5 @@
       <hr *ngIf="!isLast && accidentalDescription.selected" />
     </ng-container>
   </div>
-
-  <!-- <div class="last">
-    <p>
-      And of course, I'm proud of this website  😉
-    </p>
-  </div> -->
 
 </section>
