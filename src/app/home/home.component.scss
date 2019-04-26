@@ -31,14 +31,34 @@ main {
       height: 1.5rem;
     }
 
+    >ul {
+      display: flex;
+      margin: 0;
+      list-style-type: none;
+
+      >li {
+        >a {
+          color: $mint;
+          font-family: $font-family-sans;
+          cursor: pointer;
+        }
+        >a:hover {
+          text-decoration: none;
+          background-color: transparent;
+        }
+      }
+    }
+
     >.dropdown {
       >a {
         font-family: $font-family-sans;
         color: $mint;
       }
+
       >.dropdown-menu {
         background-color: $gunmetal;
         border: 2px solid $mint;
+
         >a {
           color: $mint;
           font-family: $font-family-sans;
