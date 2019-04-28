@@ -11,10 +11,6 @@ section {
   position: relative;
   overflow: hidden;
 
-  @include media-breakpoint-up(lg) {
-    // height: 95vh;
-  }
-
   >header {
     p {
       font-family: $font-family-fjalla;
@@ -49,7 +45,6 @@ section {
     >.social {
       display: flex;
       justify-content: space-around;
-      // transform: skewY(6deg);
       margin-top: 1rem;
       width: 90%;
 
@@ -79,7 +74,6 @@ section {
 
     &.trap-footer {
       position: absolute;
-      // top: 0;
       bottom: 0;
       right: 0;
       left: 0;

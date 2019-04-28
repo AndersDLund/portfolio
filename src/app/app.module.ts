@@ -10,9 +10,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './shared/components/header/header.component';
 import { ExperienceComponent } from './shared/components/experience/experience.component';
-import { MostRecentPositionComponent } from './shared/components/most-recent-position/most-recent-position.component';
 import { CertificatesComponent } from './shared/components/certificates/certificates.component';
 import { TechStackComponent } from './shared/components/tech-stack/tech-stack.component';
 import { SocialMediaComponent } from './shared/components/social-media/social-media.component';
@@ -24,9 +22,7 @@ import { BackgroundComponent } from './shared/components/background/background.c
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
     ExperienceComponent,
-    MostRecentPositionComponent,
     CertificatesComponent,
     TechStackComponent,
     SocialMediaComponent,

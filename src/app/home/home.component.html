@@ -2,9 +2,6 @@
 
   <nav id="navbar">
     <svg-icon src="assets/images/logo.svg"></svg-icon>
-    <!-- <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact" [ngx-scroll-to]="'contact'">Contact</a>  -->
     <ul *ngIf="isWeb">
       <li> <a href="#" class="dropdown-item" [ngx-scroll-to]="'experience'">Experience</a></li>
       <li><a href="#" class="dropdown-item" [ngx-scroll-to]="'certs'">Achievments</a></li>
@@ -36,7 +33,4 @@
   <app-hobbies id="hobbies"></app-hobbies>
   <app-tech-stack id="techStack"></app-tech-stack>
   <app-social-media id="contact"></app-social-media>
-  <!-- <app-experience></app-experience>
-<app-most-recent-position></app-most-recent-position>
-<app-social-media></app-social-media> -->
 </main>

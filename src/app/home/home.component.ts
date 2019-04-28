@@ -39,10 +39,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   scroll = (): void => {
     if (document.documentElement.scrollTop > 600) {
       document.getElementById('navbar').setAttribute('class', 'down');
-      // .style.top = '0';
     } else {
       document.getElementById('navbar').setAttribute('class', 'up');
-      // .style.top = '-50px';
     }
   }
 }
