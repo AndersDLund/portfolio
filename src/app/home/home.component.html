@@ -8,18 +8,20 @@
     <ul *ngIf="isWeb">
       <li> <a class="dropdown-item" [ngx-scroll-to]="'experience'">Experience</a></li>
       <li><a class="dropdown-item" [ngx-scroll-to]="'certs'">Achievments</a></li>
+      <li> <a class="dropdown-item" [ngx-scroll-to]="'background'">Background</a></li>
       <li><a class="dropdown-item" [ngx-scroll-to]="'hobbies'">Hobbies</a></li>
       <li><a class="dropdown-item" [ngx-scroll-to]="'techStack'">Tech Stack</a></li>
       <li><a class="dropdown-item" [ngx-scroll-to]="'contact'">Contact</a></li>
     </ul>
     <div *ngIf="!isWeb" class="dropdown show">
-      <a class=" dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-       Menu
+      <a class=" dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Menu
       </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <a class="dropdown-item" [ngx-scroll-to]="'experience'">Experience</a>
         <a class="dropdown-item" [ngx-scroll-to]="'certs'">Achievments</a>
+        <a class="dropdown-item" [ngx-scroll-to]="'background'">Background</a>
         <a class="dropdown-item" [ngx-scroll-to]="'hobbies'">Hobbies</a>
         <a class="dropdown-item" [ngx-scroll-to]="'techStack'">Tech Stack</a>
         <a class="dropdown-item" [ngx-scroll-to]="'contact'">Contact</a>
@@ -30,10 +32,11 @@
   <app-hook></app-hook>
   <app-experience [isWeb]="isWeb" id="experience"></app-experience>
   <app-certificates [isWeb]="isWeb" id="certs"></app-certificates>
+  <app-background id="background" [isWeb]="isWeb"></app-background>
   <app-hobbies id="hobbies"></app-hobbies>
   <app-tech-stack id="techStack"></app-tech-stack>
   <app-social-media id="contact"></app-social-media>
-<!-- <app-experience></app-experience>
+  <!-- <app-experience></app-experience>
 <app-most-recent-position></app-most-recent-position>
 <app-social-media></app-social-media> -->
 </main>

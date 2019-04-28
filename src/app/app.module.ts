@@ -18,6 +18,7 @@ import { TechStackComponent } from './shared/components/tech-stack/tech-stack.co
 import { SocialMediaComponent } from './shared/components/social-media/social-media.component';
 import { HookComponent } from './shared/components/hook/hook.component';
 import { HobbiesComponent } from './shared/components/hobbies/hobbies.component';
+import { BackgroundComponent } from './shared/components/background/background.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HobbiesComponent } from './shared/components/hobbies/hobbies.component'
     TechStackComponent,
     SocialMediaComponent,
     HookComponent,
-    HobbiesComponent
+    HobbiesComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,

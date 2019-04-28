@@ -11,12 +11,16 @@ main {
     background-color: $gunmetal;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem;
     position: fixed;
     top: -100px;
     width: 100vw;
     transition: top 0.7s;
     z-index: 10;
+
+    @include media-breakpoint-up(md) {
+      padding: 1rem;
+    }
 
     &.down {
       top: 0;

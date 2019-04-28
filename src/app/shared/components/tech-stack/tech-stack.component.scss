@@ -5,13 +5,14 @@
 
 section {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-direction: column;
   background-color: $mint;
+  height: 95vh;
 
-   @include media-breakpoint-up(md) {
-     height: 100vh;
-   }
+  @include media-breakpoint-up(md) {
+    height: 100vh;
+  }
 
   >header {
     p {
@@ -51,6 +52,7 @@ section {
     // display: flex;
     // justify-content: space-around;
     align-items: center;
+    margin-top: 2rem;
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -60,10 +62,10 @@ section {
     // width: 100%;
     // flex-wrap: wrap;
 
-     @include media-breakpoint-up(md) {
-       height: 100%;
-       justify-content: space-around;
-     }
+    @include media-breakpoint-up(md) {
+      height: 100%;
+      justify-content: space-around;
+    }
 
     >li {
       // display: flex;
@@ -80,7 +82,7 @@ section {
       margin-left: 20%;
 
       >div {
-         background-color: rgba(247, 255, 247, .8);
+        background-color: rgba(247, 255, 247, .8);
         height: 100%;
         width: 100%;
         display: flex;
