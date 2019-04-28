@@ -35,7 +35,7 @@ section {
     justify-content: space-between;
     padding: 0 1rem;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       flex-wrap: nowrap;
       justify-content: center;
     }
@@ -50,7 +50,7 @@ section {
       width: 46%;
       height: 8rem;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         width: auto;
         margin: 0 3rem;
       }
@@ -82,7 +82,7 @@ section {
     article:nth-child(3) {
       width: 100%;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         width: auto;
       }
     }

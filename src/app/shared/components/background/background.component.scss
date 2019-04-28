@@ -33,7 +33,7 @@ section {
     display: flex;
     flex-direction: column-reverse;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       // flex-direction: column;
       justify-content: center;
       flex-direction: row;
@@ -47,7 +47,7 @@ section {
       // padding-top: 56.25%;
       >iframe {
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           //  position: absolute;
           //  top: 0;
           //  left: 0;
@@ -64,7 +64,7 @@ section {
       display: flex;
       justify-content: center;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         width: 35%;
       }
 
@@ -73,7 +73,7 @@ section {
         height: 5rem;
         width: 5rem;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           height: 20rem;
           width: 20rem;
         }
@@ -88,7 +88,7 @@ section {
       padding: 0 2rem;
       margin: 1rem 0;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         border-left: 2px solid $gunmetal;
         width: 35%;
       }

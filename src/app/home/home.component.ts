@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
 
     this.breakpointObserver
-      .observe(['(min-width: 768px)'])
+      .observe(['(min-width: 800px)'])
       .subscribe((state: BreakpointState) => {
         if (state.matches) {
           this.isWeb = true;
