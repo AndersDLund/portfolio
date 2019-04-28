@@ -13,6 +13,14 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     window.addEventListener('scroll', this.scroll, true);
+    window.onscroll = () => {
+      if (document.documentElement.scrollTop > 600 || document.scrollingElement.scrollTop > 600) {
+        document.getElementById('navbar').setAttribute('class', 'down');
+      } else {
+        document.getElementById('navbar').setAttribute('class', 'up');
+      }
+    }
+
     this.breakpointObserver
       .observe(['(min-width: 768px)'])
       .subscribe((state: BreakpointState) => {

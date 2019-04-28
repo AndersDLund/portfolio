@@ -6,13 +6,13 @@
 section {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   background-color: $gunmetal;
   position: relative;
   overflow: hidden;
 
   @include media-breakpoint-up(md) {
-    height: 95vh;
+    // height: 95vh;
   }
 
   >header {

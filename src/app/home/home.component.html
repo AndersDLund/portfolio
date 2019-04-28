@@ -6,25 +6,25 @@
     <a href="#news">News</a>
     <a href="#contact" [ngx-scroll-to]="'contact'">Contact</a>  -->
     <ul *ngIf="isWeb">
-      <li> <a class="dropdown-item" [ngx-scroll-to]="'experience'">Experience</a></li>
-      <li><a class="dropdown-item" [ngx-scroll-to]="'certs'">Achievments</a></li>
-      <li> <a class="dropdown-item" [ngx-scroll-to]="'background'">Background</a></li>
-      <li><a class="dropdown-item" [ngx-scroll-to]="'hobbies'">Hobbies</a></li>
-      <li><a class="dropdown-item" [ngx-scroll-to]="'techStack'">Tech Stack</a></li>
-      <li><a class="dropdown-item" [ngx-scroll-to]="'contact'">Contact</a></li>
+      <li> <a href="#" class="dropdown-item" [ngx-scroll-to]="'experience'">Experience</a></li>
+      <li><a href="#" class="dropdown-item" [ngx-scroll-to]="'certs'">Achievments</a></li>
+      <li> <a href="#" class="dropdown-item" [ngx-scroll-to]="'background'">Background</a></li>
+      <li><a href="#" class="dropdown-item" [ngx-scroll-to]="'hobbies'">Hobbies</a></li>
+      <li><a href="#" class="dropdown-item" [ngx-scroll-to]="'techStack'">Tech Stack</a></li>
+      <li><a href="#" class="dropdown-item" [ngx-scroll-to]="'contact'">Contact</a></li>
     </ul>
     <div *ngIf="!isWeb" class="dropdown show">
-      <a class=" dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+      <a  href="#" class=" dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         Menu
       </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" [ngx-scroll-to]="'experience'">Experience</a>
-        <a class="dropdown-item" [ngx-scroll-to]="'certs'">Achievments</a>
-        <a class="dropdown-item" [ngx-scroll-to]="'background'">Background</a>
-        <a class="dropdown-item" [ngx-scroll-to]="'hobbies'">Hobbies</a>
-        <a class="dropdown-item" [ngx-scroll-to]="'techStack'">Tech Stack</a>
-        <a class="dropdown-item" [ngx-scroll-to]="'contact'">Contact</a>
+        <a href="#" class="dropdown-item" [ngx-scroll-to]="'experience'">Experience</a>
+        <a href="#" class="dropdown-item" [ngx-scroll-to]="'certs'">Achievments</a>
+        <a href="#" class="dropdown-item" [ngx-scroll-to]="'background'">Background</a>
+        <a href="#" class="dropdown-item" [ngx-scroll-to]="'hobbies'">Hobbies</a>
+        <a href="#" class="dropdown-item" [ngx-scroll-to]="'techStack'">Tech Stack</a>
+        <a href="#" class="dropdown-item" [ngx-scroll-to]="'contact'">Contact</a>
       </div>
     </div>
   </nav>
