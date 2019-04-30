@@ -124,7 +124,8 @@ section {
 
     >hr {
       width: 100%;
-      background-color: $mint;
+      border-top: 1px solid $mint;
+      border-bottom: 1px solid $mint;
     }
 
     >i {

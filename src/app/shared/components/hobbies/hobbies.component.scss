@@ -16,9 +16,10 @@ section {
   }
 
   >header {
-     @include media-breakpoint-up(lg) {
-       width: 100%;
-     }
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+
     p {
       font-family: $font-family-fjalla;
       font-size: 1.5rem;
@@ -31,7 +32,8 @@ section {
 
     hr {
       width: 30%;
-      border-color: $gunmetal;
+      border-top: 1px solid $gunmetal;
+      border-bottom: 1px solid $gunmetal;
     }
   }
 

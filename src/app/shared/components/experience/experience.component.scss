@@ -21,7 +21,8 @@ section {
 
     hr {
       width: 30%;
-      border-color: $gunmetal;
+      border-top: 1px solid $gunmetal;
+      border-bottom: 1px solid $gunmetal;
     }
   }
 
@@ -34,9 +35,10 @@ section {
     position: relative;
 
     >.overlay {
-          @include media-breakpoint-up(lg) {
-            margin-left: 5rem;
-          }
+      @include media-breakpoint-up(lg) {
+        margin-left: 5rem;
+      }
+
       >.exp-title {
         >p {
           font-family: $font-family-fjalla;
@@ -53,7 +55,7 @@ section {
         }
       }
 
-      >.see-more{
+      >.see-more {
         align-items: center;
         display: flex;
         position: absolute;
@@ -111,8 +113,9 @@ section {
 
       }
     }
-       @include media-breakpoint-up(lg) {
-         background-position: right;
-       }
+
+    @include media-breakpoint-up(lg) {
+      background-position: right;
+    }
   }
 }

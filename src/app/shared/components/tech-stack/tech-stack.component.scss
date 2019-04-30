@@ -26,9 +26,11 @@ section {
 
     hr {
       width: 30%;
-      border-color: $gunmetal;
+      border-top: 1px solid $gunmetal;
+      border-bottom: 1px solid $gunmetal;
     }
   }
+
   >ul {
     align-items: center;
     margin-top: 2rem;
