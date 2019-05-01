@@ -9,9 +9,9 @@ import { Route, Router } from '@angular/router';
 export class SocialMediaComponent implements OnInit {
 
   socialMedias = [
-    { name: 'Linkedin', img: 'assets/images/linkedin.png', link: 'http://www.linkedin.com/in/andersdlund/'},
-    { name: 'Github', img: 'assets/images/tech/github.png', link: 'http://github.com/AndersDLund'},
-    { name: 'Facebook', img: 'assets/images/fb.png', link: 'http://www.facebook.com/anders.lund.779'},
+    { name: 'Linkedin', img: './assets/images/linkedin.png', link: 'http://www.linkedin.com/in/andersdlund/'},
+    { name: 'Github', img: './assets/images/tech/github.png', link: 'http://github.com/AndersDLund'},
+    { name: 'Facebook', img: './assets/images/fb.png', link: 'http://www.facebook.com/anders.lund.779'},
   ];
 
   constructor(private router: Router) { }
