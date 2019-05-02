@@ -79,7 +79,7 @@ section {
       bottom: 0;
       right: 0;
       left: 0;
-      width: 100vw;
+      max-width: 100vw;
       height: 10vh;
       background-image: linear-gradient($maize, $red);
       transform: skewY(6deg);

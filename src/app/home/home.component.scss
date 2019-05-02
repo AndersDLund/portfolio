@@ -14,7 +14,7 @@ main {
      padding: 1rem;
     position: fixed;
     top: -100px;
-    width: 100vw;
+    width: 100%;
     @supports (transition: initial) {
       transition: top 0.7s ease-in-out;
     }
@@ -45,6 +45,11 @@ main {
           cursor: pointer;
         }
         >a:hover {
+          text-decoration: none;
+          background-color: transparent;
+        }
+        >a:hover,
+        a:focus {
           text-decoration: none;
           background-color: transparent;
         }
