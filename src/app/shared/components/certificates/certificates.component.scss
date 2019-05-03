@@ -61,11 +61,13 @@ section {
         flex-direction: column;
         height: 100%;
         justify-content: center;
+        transition: 2s;
 
         >p {
           text-align: center;
           margin: .5rem 0;
           color: $gunmetal;
+          transition: 2s;
         }
 
         >p:first-of-type {
@@ -74,6 +76,16 @@ section {
 
         >p:last-of-type {
           font-family: $font-family-sans;
+        }
+      }
+
+      &.selected {
+        >div {
+          background-color: rgba(255, 249, 230, 0);
+
+          >p {
+            opacity: 0;
+          }
         }
       }
     }

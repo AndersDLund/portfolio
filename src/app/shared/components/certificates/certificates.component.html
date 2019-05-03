@@ -6,7 +6,7 @@
 
   <div class="certs-container">
     <ng-container *ngFor="let certificate of certificates">
-      <article [ngStyle]="{'background-image': 'url(' + certificate.img + ')'}">
+      <article [ngClass]="{'selected': certificate.selected}" [ngStyle]="{'background-image': 'url(' + certificate.img + ')'}">
         <div>
           <p>
             <Strong>
