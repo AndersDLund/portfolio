@@ -7,27 +7,6 @@ section {
   height: auto;
   background-color: $red;
 
-  >header {
-
-    p {
-      font-family: $font-family-fjalla;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 0;
-      padding: 2rem 0 1rem 0;
-      color: $gunmetal;
-      text-align: center;
-    }
-
-    hr {
-      width: 30%;
-      border-color: $gunmetal;
-    }
-  }
-
-
-
-
   >.video-wrapper {
     padding-bottom: 2rem;
     display: flex;
@@ -77,6 +56,9 @@ section {
       >p {
         color: $gunmetal;
         font-family: $font-family-sans;
+         @include media-breakpoint-up(xl) {
+          font-size: 1.5rem;
+         }
       }
     }
   }

@@ -13,17 +13,10 @@ section {
 
   >header {
     p {
-      font-family: $font-family-fjalla;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 0;
-      padding: 2rem 0 1rem 0;
       color: $mint;
-      text-align: center;
     }
 
     hr {
-      width: 30%;
       border-top: 1px solid $mint;
       border-bottom: 1px solid $mint;
     }
@@ -41,13 +34,17 @@ section {
       font-family: $font-family-sans;
       font-weight: bold;
       text-align: center;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 2rem;
+      }
     }
 
     >.social {
       display: flex;
       justify-content: space-around;
       margin-top: 1rem;
-      width: 90%;
+      width: 70%;
 
       @include media-breakpoint-up(lg) {
         width: 15%;
@@ -60,6 +57,11 @@ section {
           cursor: pointer;
           height: 3rem;
           width: 3rem;
+
+          @include media-breakpoint-up(xl) {
+              height: 5rem;
+              width: 5rem;
+          }
         }
 
         >img:hover {
@@ -86,7 +88,29 @@ section {
       transform: skewY(6deg);
       transform-origin: top left;
       animation: Gradient 10s ease infinite;
+
+         @include media-breakpoint-up(lg) {
+            height: 17vh;
+         }
     }
+  }
+
+  >.headshot {
+    align-self: center;
+    bottom: 1rem;
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-image: url(/assets/images/anders.jpeg);
+    background-position: center;
+    background-size: 90%;
+    z-index: 1;
+
+      @include media-breakpoint-up(lg) {
+        height: 9rem;
+        width: 9rem;
+      }
   }
 }
 

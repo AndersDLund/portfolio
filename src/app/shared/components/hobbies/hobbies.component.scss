@@ -15,28 +15,6 @@ section {
     align-items: center;
   }
 
-  >header {
-    @include media-breakpoint-up(lg) {
-      width: 100%;
-    }
-
-    p {
-      font-family: $font-family-fjalla;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 0;
-      padding: 2rem 0 1rem 0;
-      color: $gunmetal;
-      text-align: center;
-    }
-
-    hr {
-      width: 30%;
-      border-top: 1px solid $gunmetal;
-      border-bottom: 1px solid $gunmetal;
-    }
-  }
-
   >article {
     padding: 0 1rem;
 
@@ -57,11 +35,20 @@ section {
         height: 3rem;
         width: 3rem;
         margin-right: 1rem;
+
+         @include media-breakpoint-up(xl) {
+            height: 5.5rem;
+            width: 5.5rem;
+         }
       }
 
       >p {
         color: $gunmetal;
         font-family: $font-family-sans;
+
+         @include media-breakpoint-up(xl) {
+          font-size: 1.5rem;
+         }
       }
     }
   }

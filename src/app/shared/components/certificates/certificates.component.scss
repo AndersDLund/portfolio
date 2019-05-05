@@ -10,24 +10,6 @@ section {
   flex-direction: column;
   padding-bottom: 2rem;
 
-  >header {
-    p {
-      font-family: $font-family-fjalla;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 0;
-      padding: 2rem 0 1rem 0;
-      color: $gunmetal;
-      text-align: center;
-    }
-
-    hr {
-      width: 30%;
-      border-top: 1px solid $gunmetal;
-      border-bottom: 1px solid $gunmetal;
-    }
-  }
-
   >.certs-container {
     display: flex;
     margin-top: 1rem;
@@ -55,6 +37,10 @@ section {
         margin: 0 3rem;
       }
 
+      @include media-breakpoint-up(xl) {
+        height: 15rem;
+      }
+
       >div {
         background-color: rgba(255, 249, 230, .8);
         display: flex;
@@ -68,6 +54,10 @@ section {
           margin: .5rem 0;
           color: $gunmetal;
           transition: 2s;
+
+          @include media-breakpoint-up(xl) {
+            font-size: 2rem;
+          }
         }
 
         >p:first-of-type {

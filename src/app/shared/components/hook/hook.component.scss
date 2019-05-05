@@ -30,7 +30,21 @@ section {
       transform: skewY(-6deg);
       transform-origin: top left;
       animation: Gradient 10s ease infinite;
+
+      @include media-breakpoint-up(lg) {
+        height: 17vh;
+      }
     }
+  }
+
+  >.scape {
+    position: absolute;
+    height: 6.2rem;
+    width: 100%;
+    top: 0;
+    background-image: url(/assets/images/scapes/37.jpg);
+    background-position: left;
+    background-size: contain;
   }
 
   >article {
