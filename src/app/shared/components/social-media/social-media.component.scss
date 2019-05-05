@@ -29,11 +29,13 @@ section {
     flex-direction: column;
     justify-content: center;
 
-    p {
+    a {
       color: $mint;
+      text-decoration: none;
       font-family: $font-family-sans;
       font-weight: bold;
       text-align: center;
+      margin: .5rem;
 
       @include media-breakpoint-up(xl) {
         font-size: 2rem;
